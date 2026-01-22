@@ -1,0 +1,19 @@
+[project]
+name = "era5-repack"
+version = "0.1.0"
+description = "Repacking ERA5 data without differing scale factors and offsets"
+authors = [
+    {name = "Daniel Westwood",email = "daniel.westwood@stfc.ac.uk"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "netcdf4 (>=1.7.4,<2.0.0)",
+    "xarray (>=2025.12.0,<2026.0.0)",
+    "datetime (>=6.0,<7.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
