@@ -1,0 +1,88 @@
+{
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [-180, -90, 180, 90]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00.000Z",
+          "2025-09-30T23:59:59.000Z"
+        ]
+      ]
+    }
+  },
+  "stac_version": "1.0.0",
+  "license": "other",
+  "assets": {
+    "thumbnail": {
+      "roles": [
+        "thumbnail"
+      ],
+      "href": "https://gws-access.jasmin.ac.uk/public/eds_ai/era5.png",
+      "type": "image/png"
+    }
+  },
+  "keywords": [
+    "ECMWF",
+    "ERA5",
+    "Reanalysis",
+    "Repack",
+    "7b64cf24f47f4b1aa499339c5a576be1"
+  ],
+  "description": "The objectives of the European Centre for Medium-Range Weather Forecasts ERA5 project are to produce and promote use of a comprehensive set of global analyses describing the state of the atmosphere, land and ocean-wave conditions from 1979 to present. The ERA5 project builds on the previous work undertaken by the ERA-15, ERA-40 and ERA-Interim projects. ERA5 is continuously updated at ECMWF, with initial products upto 5 days behind the present day issued as ERA5t ahead of review and final release as the ERA5 data, typically 2 months behind the present month.\n\nThis collection of ERA5 data has been repacked without quantised compression for use with the EDS AI projects High5 and FRAME-FM (14th January 2026). This is not a complete record of ERA5 data at CEDA. Further details of the nature of subsetting to follow.\n\nCEDA Catalogue Record: https://catalogue.ceda.ac.uk/uuid/7b64cf24f47f4b1aa499339c5a576be1/",
+  "links": [
+    {
+      "rel": "items",
+      "type": "application/geo+json",
+      "href": "https://api.stac.ceda.ac.uk/collections/era5_repack/items"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://api.stac.ceda.ac.uk/"
+    },
+    {
+      "rel": "queryables",
+      "type": "application/json",
+      "href": "https://api.stac.ceda.ac.uk/collections/era5_repack/queryables"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://api.stac.ceda.ac.uk/"
+    },
+    {
+      "rel": "self",
+      "type": "application/json",
+      "href": "https://api.stac.ceda.ac.uk/collections/era5_repack"
+    }
+  ],
+  "id": "era5_repack",
+  "type": "Collection",
+  "title": "ERA5 Re-analysis (Repacked)",
+  "providers": [
+    {
+      "name": "The European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://www.ecmwf.int/"
+    },
+    {
+      "name": "Centre for Environmental Data Analysis (CEDA)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://ceda.ac.uk"
+    }
+  ],
+  "summaries": {
+    "variable_long_name": ["Total column water vapour", "Skin temperature", "10 metre V wind component", "10 metre U wind component", "Sea surface temperature", "2 metre temperature", "Mean sea level pressure", "2 metre dewpoint temperature", "Sea ice area fraction", "Total cloud cover"],
+    "variable_id": ["d2m", "sst", "skt", "siconc", "u10", "msl", "t2m", "v10", "tcc", "tcwv"],
+    "ensemble_member":["mem0", "mem1", "mem2", "mem3", "mem4", "mem5", "mem6", "mem7", "mem8", "mem9"]
+  },
+  "stac_extensions": []
+}
